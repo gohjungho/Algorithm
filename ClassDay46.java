@@ -378,19 +378,13 @@ public class ClassDay46 {
 
         System.out.println("c >= b >= a가 되도록 정렬했습니다.");
         if (a > b) {
-            int t = a; 
-            a = b;
-            b = t;
+            int t = a; a = b; b = t;
         }
         if (a > c) {
-            int t = a;
-            a = c;
-            c = t;
+            int t = a; a = c; c = t;
         }
         if (b > c) {
-            int t = b; 
-            b = c;
-            c = t;
+            int t = b; b = c; c = t;
         }
         System.out.println("변수 a는 " + a + "입니다.");
         System.out.println("변수 b는 " + b + "입니다.");
