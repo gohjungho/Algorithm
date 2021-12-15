@@ -1,4 +1,5 @@
 '''
+# 12015
 Q. 이분탐색 7 - 가장 긴 증가하는 부분 수열 2
 
 수열 A가 주어졌을 때, 가장 긴 증가하는 부분 수열을 구하는 프로그램을 작성하시오.
@@ -27,12 +28,15 @@ Q. 이분탐색 7 - 가장 긴 증가하는 부분 수열 2
 # print(solution(A))
 
 n = int(input())
-s = list(map(float, input().split()))
+s = list(map(int, input().split()))
 
-sequence = [s[0]] # 순차적으로 증가할 숫자의 list 
+sequence = [] # 순차적으로 증가할 숫자의 list 
 
-for i in range(1, len(s)):
-    if s[i] > sequence[-1]:
-        sequence.append(s[i])
+for i in s:
+    if sequence == []:
+        sequence.append(i)
+    
+    elif i > sequence[-1]:
+        sequence.append(i)
 
 print(len(sequence))
