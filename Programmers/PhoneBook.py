@@ -4,4 +4,8 @@ def solution(phone_book):
         length = len(phone_book[i-1])
         if phone_book[i-1] in phone_book[i][:length] : 
             return False
+<<<<<<< HEAD
     return True
+=======
+    return True
+>>>>>>> f0df24b17bf8f0e80cf644d77d399c9509fa116f
